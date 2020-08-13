@@ -25,7 +25,7 @@ def schedule(directory, hour, minute, second, days, project):
     programstart = now.replace(hour = starth, minute = startm, second = starts)
 
     if (now == programstart and istodaytheday):
-        print("Starting " + project + " at " + now)
+        print("Starting " + project + " at " + str(now))
         os.system("py " + directory)
         time.sleep(1)
 
